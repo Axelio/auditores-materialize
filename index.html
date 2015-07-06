@@ -13,15 +13,21 @@
 <body>
 
   <header>
-  <nav class="white" role="navigation">
+  <nav role="navigation" class="blue z-depth-0">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.html" class="brand-logo black-text"><img height=60px src="static/images/logo_suscerte.png"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Cómo registrarse</a></li>
+        <li><a href="#">Contáctanos</a></li>
+        <li><a href="#">Auditores registrados</a></li>
+        <li><a href="#"><b>Iniciar sesión</b></a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+      <ul id="nav-mobile" class="side-nav blue darken-1">
+        <li><a href="#">Cómo registrarse</a></li>
+        <li><a href="#">Contáctanos</a></li>
+        <li><a href="#">Auditores registrados</a></li>
+        <li><a class="active" class=" white-text" href="#"><b>Iniciar sesión</b></a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </div>
@@ -30,30 +36,23 @@
 
   <main>
   
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+  <div class="parallax-container valign-wrapper">
       <div class="container">
-        <h1 class="header center teal-text lighten-5">SUSCERTE</h1>
+        <h1 class="header center white-text">SUSCERTE</h1>
         <div class="row center">
-          <h5 class="header col s12 light white-text">Sé un auditor acreditado por SUSCERTE y súmate a nuestro <a href=#>listado de profesionales</a></h5>
-        </div>
-        <div class="row center">
-          <!-- Modal Trigger -->
-            <a class="waves-effect waves-light btn-large teal lighten-1" href="#formulario.html">Iniciar sesión</a>
+          <h5 class="header col s12 light white-text">Sé un auditor acreditado por SUSCERTE y súmate a nuestro <b><u><a class="white-text" href=#>listado de profesionales</a></u></b></h5>
         </div>
       </div>
-    </div>
-    <div class="parallax"><img src="static/images/edocument.jpg" alt="SUSCERTE"></div>
+    <div class="parallax blue"></div>
   </div>
 
   <div class="container">
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center teal-text"><i class="mdi-image-filter-1"></i></h2>
+            <h2 class="center blue-text"><i class="mdi-image-filter-1"></i></h2>
             <h5 class="center">Solicita el registro</h5>
 
             <p class="light">Envíanos un correo solicitándonos ser Auditor acreditado por SUSCERTE al correo <img src="/main/static/images/correo_ra.png"> con tu Currículum Vitae adjunto en formato PDF.</p>
@@ -62,7 +61,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center teal-text"><i class="mdi-image-filter-2"></i></h2>
+            <h2 class="center blue-text"><i class="mdi-image-filter-2"></i></h2>
             <h5 class="center">Creación de usuario</h5>
 
             <p class="light">SUSCERTE te creará un usuario para que puedas <a href="index.html">ingresar</a>. Al crearse el usuario automáticamente se te enviará un mail con los datos de ingreso.</p>
@@ -71,7 +70,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center teal-text"><i class="mdi-image-filter-3"></i></h2>
+            <h2 class="center blue-text"><i class="mdi-image-filter-3"></i></h2>
             <h5 class="center">Carga tus datos</h5>
 
             <p class="light">Deberás cargar tu currículum a través del sistema una vez autenticado, luego se te citará a una entrevista y una evaluación para acreditarte. Una vez acreditado podrás consultarte en la lista de <a href="{% url 'listado_auditores' %}">auditores acreditados</a>.</p>
@@ -87,7 +86,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br /><br />
-        <h1 class="center teal-text lighten-5">Contáctanos</h1>
+        <h1 class="center white-text lighten-5">Contáctanos</h1>
         <div class="row center">
           <h5 class="header col s12 light white-text">A modern responsive front-end framework based on Material Design</h5>
         </div>
