@@ -2676,7 +2676,7 @@ Vel = $ ? $.Velocity : Velocity,
                         m = k + l,
                         n = (m - j) / (d + l),
                         o = Math.round(h * n);
-                    c && f.css("display", "block"), i > k && k + l > j && f.css("transform", "translate3D(0px," + o + "px, 0)")
+                    c && f.css("display", "block"), i > k && k + l > j && f.css("transform", "translate3D(0px, 800px, 0px)")
                 }
                 var e = a(this);
                 e.addClass("parallax"), e.children("img").one("load", function() {
