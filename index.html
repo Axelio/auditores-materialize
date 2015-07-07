@@ -14,105 +14,155 @@
 <body>
 
   <header>
-  <nav role="navigation" class="blue z-depth-0">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo black-text"><img height=60px src="static/images/logo_suscerte.png"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Cómo registrarse</a></li>
-        <li><a href="#">Contáctanos</a></li>
-        <li><a href="#">Auditores registrados</a></li>
-        <li><a href="#"><b>Iniciar sesión</b></a></li>
-      </ul>
+    <div class="navbar-fixed">
+      <nav class="blue">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo black-text"><img height=60px src="static/images/logo_suscerte.png"></a>
+          <ul class="right hide-on-med-and-down section">
+            <li><a href="#como_registrarse">Cómo registrarse</a></li>
+            <li><a href="#auditores">Auditores registrados</a></li>
+            <li><a href="#contacto">Contáctanos</a></li>
+            <li><a href="#"><b>Iniciar sesión</b></a></li>
+          </ul>
 
-      <ul id="nav-mobile" class="side-nav blue darken-1">
-        <li><a href="#">Cómo registrarse</a></li>
-        <li><a href="#">Contáctanos</a></li>
-        <li><a href="#">Auditores registrados</a></li>
-        <li><a class="white-text" href="#"><b>Iniciar sesión</b></a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          <ul id="nav-mobile" class="side-nav blue darken-1">
+            <li><a href="#como_registrarse">Cómo registrarse</a></li>
+            <li><a href="#auditores">Auditores registrados</a></li>
+            <li><a href="#contacto">Contáctanos</a></li>
+            <li><a class="white-text" href="#"><b>Iniciar sesión</b></a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+      </nav>
     </div>
-  </nav>
   </header>
 
   <main>
-  
-  <div class="parallax-container valign-wrapper">
-      <div class="container">
-        <h1 class="header center white-text">SUSCERTE</h1>
-        <div class="row center">
-          <h5 class="header col s12 light white-text">Sé un auditor acreditado por SUSCERTE y súmate a nuestro <b><u><a class="white-text" href=#>listado de profesionales</a></u></b></h5>
-        </div>
-      </div>
-    <div class="parallax blue"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="mdi-image-filter-1"></i></h2>
-            <h5 class="center">Solicita el registro</h5>
-
-            <p class="light">Envíanos un correo solicitándonos ser Auditor acreditado por SUSCERTE al correo <img src="/main/static/images/correo_ra.png"> con tu Currículum Vitae adjunto en formato PDF.</p>
+    <div class="parallax-container valign-wrapper">
+        <div class="container">
+          <h1 class="header center white-text">SUSCERTE</h1>
+          <div class="row center">
+            <h5 class="header col s12 light white-text">Sé un auditor acreditado por SUSCERTE y súmate a nuestro <b><u><a class="white-text" href=#>listado de profesionales</a></u></b></h5>
           </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="mdi-image-filter-2"></i></h2>
-            <h5 class="center">Creación de usuario</h5>
-
-            <p class="light">SUSCERTE te creará un usuario para que puedas <a href="index.html">ingresar</a>. Al crearse el usuario automáticamente se te enviará un mail con los datos de ingreso.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="mdi-image-filter-3"></i></h2>
-            <h5 class="center">Carga tus datos</h5>
-
-            <p class="light">Deberás cargar tu currículum a través del sistema una vez autenticado, luego se te citará a una entrevista y una evaluación para acreditarte. Una vez acreditado podrás consultarte en la lista de <a href="{% url 'listado_auditores' %}">auditores acreditados</a>.</p>
-          </div>
-        </div>
-      </div>
-
+      <div class="parallax blue"></div>
     </div>
-  </div>
+
+    <div class="container">
+      <div class="section" id="como_registrarse">
+        <br />
+        <h1 class="center blue-text">Cómo registrarse</h1>
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+              <h1 class="center blue-text"><i class="mdi-communication-quick-contacts-mail"></i></h1>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Solicita el registro <i class="mdi-navigation-more-vert right"></i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Solicita el registro <i class="mdi-navigation-close right"></i></span>
+                <p>Envíanos un correo solicitándonos ser Auditor acreditado por SUSCERTE al correo <img src="static/images/correo_ra.png"> con tu Currículum Vitae adjunto en formato PDF.</p>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+              <h1 class="center blue-text"><i class="mdi-social-person-add"></i></h1>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Nuevo usuario <i class="mdi-navigation-more-vert right"></i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Nuevo usuario <i class="mdi-navigation-close right"></i></span>
+                <p class="light">SUSCERTE te creará un usuario para que puedas <a href="index.html">ingresar</a>. Al crearse el usuario automáticamente se te enviará un mail con los datos de ingreso.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+              <h1 class="center blue-text"><i class="mdi-action-book"></i></h1>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Cargar currículum <i class="mdi-navigation-more-vert right"></i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Cargar currículum <i class="mdi-navigation-close right"></i></span>
+                <p class="light">Deberás cargar tu currículum a través del sistema una vez te hayas autenticado.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+              <h1 class="center blue-text"><i class="fa fa-calendar"></i></h1>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Fijación de cita <i class="mdi-navigation-more-vert right"></i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Fijación de cita <i class="mdi-navigation-close right"></i></span>
+                <p class="light">Te citaremos a una entrevista con un panel de especialistas del área de seguridad de la información, la auditoría, y la certificación electrónica y criptografía.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+              <h1 class="center blue-text"><i class="fa fa-pencil-square-o"></i></h1>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Evaluación <i class="mdi-navigation-more-vert right"></i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Evaluación <i class="mdi-navigation-close right"></i></span>
+                <p class="light">Presentarás una evaluación sobre una gama de administración de claves públicas, auditorías y estándares de seguridad.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+              <h1 class="center blue-text"><i class="mdi-action-verified-user"></i></h1>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Registro <i class="mdi-navigation-more-vert right"></i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Registro <i class="mdi-navigation-close right"></i></span>
+                <p class="light">Una vez acreditado podrás consultarte en la lista de <a href="{% url 'listado_auditores' %}">auditores acreditados</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="parallax"><img src="static/images/caracas.jpg" alt="Contáctanos"></div>
+      </div>
+    </div>
 
 
-  <div id="index-contact-us" class="parallax-container">
-    <div class="section no-pad-bot">
-      
-    <div class="parallax"><img src="static/images/caracas.jpg" alt="Contáctanos"></div>
-  </div>
 
 
   
   </main>
 
-  <!--  Scripts-->
-  <script src="static/js/jquery-2.1.1.min.js"></script>
-  <script src="static/js/materialize.js"></script>
-  <script src="static/js/init.js"></script>
-  <script>
-    $('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 200,
-    format: 'dd/mm/yyyy',
-    });
-  </script>
-
-  <script>
-  $(document).ready(function() {
-    $('input#input_text, textarea#textarea1').characterCounter();
-  });
-  </script>
-
   </body>
-<footer class="blue">
+<footer class="blue section scrollspy" id="contacto">
   <div class="container">
     <br /><br />
     <h1 class="center white-text lighten-5">Contáctanos</h1>
@@ -192,6 +242,25 @@
       </div>
     </div>
   </div>
+
+  <!--  Scripts-->
+  <script src="static/js/jquery-2.1.1.min.js"></script>
+  <script src="static/js/materialize.js"></script>
+  <script src="static/js/init.js"></script>
+  <script>
+    $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 200,
+    format: 'dd/mm/yyyy',
+    });
+  </script>
+
+  <script>
+  $(document).ready(function() {
+    $('input#input_text, textarea#textarea1').characterCounter();
+  });
+  </script>
+
 </footer>
 </html>
   
